@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-def element_at(my_list, idx):
-    for x in my_list:
-        if idx == my_list.index(x):
-            return(x)
-        elif idx > len(my_list):
-            return None
-        elif idx < 0:
-            return None
+def no_c(my_string):
+    l = list(my_string)
+    for x in l:
+        if x == 'c':
+            l.remove('c')
+        if x == 'C':
+            l.remove('C')
+    my_string = "".join(l)
+    return my_string
