@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-def no_c(my_string):
-    new_str = my_string[:]
-    if my_string is not None:
-        for i in range(0, len(new_str)):
-            if new_str[i] == "c" or new_str[i] == "C":
-                new_str = new_str[0:i] + new_str[i + 1:]
-                return new_str
+def element_at(my_list, idx):
+    for x in my_list:
+        if idx == my_list.index(x):
+            return(x)
+        elif idx > len(my_list):0
+            return None
+        elif idx < 0:
+            return None
